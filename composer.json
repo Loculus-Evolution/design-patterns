@@ -1,0 +1,46 @@
+{
+    "name": "Loculus-Evolution/design-patterns.git",
+    "type": "library",
+    "description": "Bunch of design pattern traits.",
+    "keywords": ["framework", "design patterns", "traits"],
+    "homepage": "http://appcraft.academy",
+    "license": "BSD-3-Clause AGH LL class",
+    "authors": [
+        {
+            "name": "Tomasz Kuter",
+            "email": "tkuter@loculus.pl",
+            "homepage": "http://loculus.eu/"
+        },
+        {
+            "name": "Contributors",
+            "homepage": "https://github.com/Loculus-Evolution/design-patterns/graphs/contributors"
+        }
+    ],
+    "support": {
+        "issues": "https://github.com/Loculus-Evolution/design-patterns/issues",
+        "source": "hhttps://github.com/Loculus-Evolution/design-patterns"
+    },
+    "require": {
+        "php": ">=7.1"
+    },
+    "require-dev": {
+        "behat/behat": "^3.4",
+        "phpunit/phpunit": "^6.3"
+    },
+    "autoload": {
+        "psr-4": {
+            "LoculusEvolution\\":"src/LoculusEvolution",
+            "LoculusEvolution\\Design-Patters\\":"src/LoculusEvolution/Design-Patterns",
+            "LoculusEvolution\\Design-Patters\\Singleton\\":"src/LoculusEvolution/Design-Patterns/Singleton",
+            "LoculusEvolution\\Design-Patters\\Exception\\":"src/LoculusEvolution/Design-Patterns/Exception"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "tests\\LoculusEvolution\\": "tests/LoculusEvolution",
+            "tests\\LoculusEvolution\\Design-Patterns\\": "src/LoculusEvolution/Design-Patterns",
+            "tests\\LoculusEvolution\\Design-Patterns\\BDD\\": "src/LoculusEvolution/Design-Patterns/BDD",
+            "tests\\LoculusEvolution\\Design-Patterns\\BDD\\Behat\\": "src/LoculusEvolution/Design-Patterns/BDD/Behat"
+        }
+    }
+}
