@@ -6,13 +6,13 @@ namespace LoculusEvolution\DesignPatterns\Singleton;
  * @author Tomasz Kuter <tkuter@loculus.pl>
  * @publisedAt 2017-10-03 00L39S59 Europe/Poland.LesserPoland/Cracow
  */
-interface iSingleton
+interface SingletonInterface
 {
     /**
      * Returns an instance of the object based on singleton design pattern
      *
      * @param  string  $className  Class name
-     * @return iSingleton
+     * @return singletonInterface
      */
-    public function getInstance(string $className = Singleton::class): iSingleton;
+    public static function getInstance(string $className = Singleton::class): singletonInterface;
 }
