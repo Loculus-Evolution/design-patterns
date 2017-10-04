@@ -28,8 +28,8 @@ final class Singleton extends AbstractSingleton
      */
     public static function getInstance(string $className = self::class): singletonInterface
     {
-        echo __METHOD__, PHP_EOL;
-        echo $className, PHP_EOL;
+//        echo __METHOD__, PHP_EOL;
+//        echo $className, PHP_EOL;
 
         if (is_null(static::$instance)) {
             if (! class_exists($className)) {
@@ -39,7 +39,7 @@ final class Singleton extends AbstractSingleton
             static::$instance = new $className();
         }
 
-        echo 'exit getInstance().', PHP_EOL;
+//        echo 'exit getInstance().', PHP_EOL;
 
         return static::$instance;
     }
