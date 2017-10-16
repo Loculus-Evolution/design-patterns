@@ -11,7 +11,7 @@ This document describes bunch of Design Patterns delivered for PHP based project
 
 ### Standard difficult level
 
-[] Observer
+[o] Observer
 
 ### Medium difficulty level
 
