@@ -30,9 +30,7 @@
     "autoload": {
         "psr-4": {
             "LoculusEvolution\\":"src/LoculusEvolution",
-            "LoculusEvolution\\Design-Patters\\":"src/LoculusEvolution/Design-Patterns",
-            "LoculusEvolution\\Design-Patters\\Singleton\\":"src/LoculusEvolution/Design-Patterns/Singleton",
-            "LoculusEvolution\\Design-Patters\\Exception\\":"src/LoculusEvolution/Design-Patterns/Exception"
+            "LoculusEvolution\\Design-Patters\\":"src/LoculusEvolution/Design-Patterns"
         }
     },
     "autoload-dev": {
