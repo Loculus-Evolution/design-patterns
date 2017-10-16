@@ -14,3 +14,10 @@ default:
       contexts:
         - SingletonODMMFeatureContext:
           className: tests\LoculusEvolution\DesignPatterns\BDD\Behat\bootstrap\Singleton\ODMM
+
+    # running basic Observer suite
+    observer:
+      paths:
+        - tests/LoculusEvolution/DesignPatterns/BDD/Behat/features/Observer
+      contexts:
+        - ObserverFeatureContext

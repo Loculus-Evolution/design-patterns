@@ -33,11 +33,4 @@ interface SubjectInterface
      * Notifies all attached observer, when subject change it's state
      */
     public function notify();
-
-    /**
-     * Returns subject's state as integer.
-     *
-     * @return int
-     */
-    public function getState(): int;
 }

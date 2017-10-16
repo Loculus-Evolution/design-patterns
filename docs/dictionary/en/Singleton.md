@@ -4,7 +4,7 @@ Lead..
 
 ### Other names
 
-Polish name: Manufaktura, Matka, Ojciec, Rodzic, Fabryka egzemplarzy..
+Polish name: Manufaktura, Matka, Ojciec, Rodzic, Fabryka egzemplarzy.
 English name: Manufacture, Mother, Father, Parent, Instance Factory.
 
 ## Definition

@@ -86,6 +86,14 @@ class BaseFeatureContext implements Context
     }
 
     /**
+     * @Given the method :methodName should have :accessType access
+     */
+    public function theMethodShouldHaveAndAccess($methodName, $accessType)
+    {
+        $this->checkClassMethodAccessType($this->className, $methodName, $accessType);
+    }
+
+    /**
      * @Given the method :methodName should have :accessType1 and :accessType2 access only
      */
     public function theMethodShouldHaveAndAccessOnly($methodName, $accessType1, $accessType2)

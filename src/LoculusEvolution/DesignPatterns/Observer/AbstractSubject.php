@@ -66,11 +66,4 @@ abstract class AbstractSubject implements SubjectInterface
             $observer->update($this);
         }
     }
-
-    /**
-     * Returns subject's state as integer.
-     *
-     * @return int
-     */
-    abstract public function getState(): int;
 }
