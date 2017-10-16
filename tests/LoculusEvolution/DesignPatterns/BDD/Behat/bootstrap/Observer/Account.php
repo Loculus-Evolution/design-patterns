@@ -1,7 +1,7 @@
 <?php
 namespace tests\LoculusEvolution\DesignPatterns\BDD\Behat\bootstrap\Observer;
 
-use LoculusEvolution\DesignPatterns\Observer\AbstractSubject;
+use LoculusEvolution\DesignPatterns\Pattern\Observer\AbstractSubject;
 
 /**
  * Class NamedSubject

@@ -1,8 +1,8 @@
 <?php
 namespace LoculusEvolution\DesignPatterns\Demo\Observer;
 
-use LoculusEvolution\DesignPatterns\Observer\Observer;
-use LoculusEvolution\DesignPatterns\Observer\SubjectInterface;
+use LoculusEvolution\DesignPatterns\Pattern\Observer\Observer;
+use LoculusEvolution\DesignPatterns\Pattern\Observer\SubjectInterface;
 
 /**
  * Class NamedObserver

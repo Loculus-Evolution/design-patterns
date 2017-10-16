@@ -1,8 +1,8 @@
 <?php
 namespace tests\LoculusEvolution\DesignPatterns\BDD\Behat\bootstrap\Observer;
 
-use LoculusEvolution\DesignPatterns\Observer\Observer as BaseObserver;
-use LoculusEvolution\DesignPatterns\Observer\SubjectInterface;
+use LoculusEvolution\DesignPatterns\Pattern\Observer\Observer as BaseObserver;
+use LoculusEvolution\DesignPatterns\Pattern\Observer\SubjectInterface;
 
 /**
  * Class NamedObserver

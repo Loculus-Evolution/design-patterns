@@ -1,7 +1,7 @@
 <?php
 require_once '../../vendor/autoload.php';
 
-use LoculusEvolution\DesignPatterns\Singleton\Singleton;
+use LoculusEvolution\DesignPatterns\Pattern\Singleton\Singleton;
 
 echo 'test-1.', PHP_EOL;
 

@@ -1,10 +1,10 @@
 <?php
-namespace LoculusEvolution\DesignPatterns\Observer;
+namespace LoculusEvolution\DesignPatterns\Pattern\Observer;
 
 /**
  * Interface SubjectInterface
  *
- * @package     LoculusEvolution\DesignPatterns\Observer
+ * @package     LoculusEvolution\DesignPatterns\Pattern\Observer
  * @license     New BSD License
  * @copyright   Copyright (c) 2017 Tomasz Evolic Kuter. (http://www.tomaszkuter.com)
  * @author      Tomasz Kuter <tkuter@loculus.pl>

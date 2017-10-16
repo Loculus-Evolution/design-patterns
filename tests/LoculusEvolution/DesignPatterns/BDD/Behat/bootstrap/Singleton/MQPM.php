@@ -1,7 +1,7 @@
 <?php
 namespace tests\LoculusEvolution\DesignPatterns\BDD\Behat\bootstrap\Singleton;
 
-use LoculusEvolution\DesignPatterns\Singleton;
+use LoculusEvolution\DesignPatterns\Pattern\Singleton;
 
 /**
  * ODMM class implementing Singleton design pattern by using SingletonTrait.

@@ -1,8 +1,8 @@
 <?php
 namespace LoculusEvolution\DesignPatterns\Demo\Singleton;
 
-use LoculusEvolution\DesignPatterns\Singleton\SingletonInterface;
-use LoculusEvolution\DesignPatterns\Singleton\SingletonTrait;
+use LoculusEvolution\DesignPatterns\Pattern\Singleton\SingletonInterface;
+use LoculusEvolution\DesignPatterns\Pattern\Singleton\SingletonTrait;
 
 use LoculusEvolution\DesignPatterns\Exception\ClassNotFoundException;
 

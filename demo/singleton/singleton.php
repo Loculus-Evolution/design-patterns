@@ -1,7 +1,7 @@
 <?php
 require_once '../../vendor/autoload.php';
 
-use LoculusEvolution\DesignPatterns\Singleton\Singleton;
+use LoculusEvolution\DesignPatterns\Pattern\Singleton\Singleton;
 use tests\LoculusEvolution\DesignPatterns\BDD\Behat\bootstrap\Singleton\RDMM;
 
 $objectOne = Singleton::getInstance();

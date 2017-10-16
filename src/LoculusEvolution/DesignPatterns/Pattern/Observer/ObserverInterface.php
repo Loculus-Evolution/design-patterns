@@ -1,15 +1,15 @@
 <?php
-namespace LoculusEvolution\DesignPatterns\Observer;
+namespace LoculusEvolution\DesignPatterns\Pattern\Observer;
 
 /**
- * Class AbstractObserver
+ * Interface ObserverInterface
  *
- * @package     LoculusEvolution\DesignPatterns\Observer
+ * @package     LoculusEvolution\DesignPatterns\Pattern\Observer
  * @license     New BSD License
  * @copyright   Copyright (c) 2017 Tomasz Evolic Kuter. (http://www.tomaszkuter.com)
  * @author      Tomasz Kuter <tkuter@loculus.pl>
  */
-abstract class AbstractObserver implements ObserverInterface
+interface ObserverInterface
 {
     /**
      * Attaches observer to the subject and vice-versa.
@@ -18,11 +18,7 @@ abstract class AbstractObserver implements ObserverInterface
      * @param  SubjectInterface $subject
      * @return bool
      */
-    public function attach(SubjectInterface $subject): bool
-    {
-        return $subject->attach($this);
-    }
-
+    public function attach(SubjectInterface $subject): bool;
 
     /**
      * Detaches observer from the subject and vice-versa if provided subject instance is valid.
@@ -31,11 +27,7 @@ abstract class AbstractObserver implements ObserverInterface
      * @param SubjectInterface $subject
      * @return bool
      */
-    public function detach(SubjectInterface $subject): bool
-    {
-        return $subject->detach($this);
-    }
-
+    public function detach(SubjectInterface $subject): bool;
 
     /**
      * Updates subject's state called by subject notify() method
@@ -43,5 +35,5 @@ abstract class AbstractObserver implements ObserverInterface
      * @param  SubjectInterface $subject
      * @return mixed
      */
-    abstract public function update(SubjectInterface $subject);
+    public function update(SubjectInterface $subject);
 }

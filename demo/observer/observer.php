@@ -3,9 +3,6 @@ require_once '../../vendor/autoload.php';
 require_once 'NamedObserver.php';
 require_once 'NamedSubject.php';
 
-use LoculusEvolution\DesignPatterns\Observer\Observer;
-use LoculusEvolution\DesignPatterns\Observer\Subject;
-
 use LoculusEvolution\DesignPatterns\Demo\Observer\NamedObserver;
 use LoculusEvolution\DesignPatterns\Demo\Observer\NamedSubject;
 

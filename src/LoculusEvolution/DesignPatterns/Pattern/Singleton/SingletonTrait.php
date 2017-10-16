@@ -1,12 +1,12 @@
 <?php
-namespace LoculusEvolution\DesignPatterns\Singleton;
+namespace LoculusEvolution\DesignPatterns\Pattern\Singleton;
 
 use LoculusEvolution\DesignPatterns\Exception\ClassNotFoundException;
 
 /**
  * Trait SingletonTrait
  *
- * @package LoculusEvolution\DesignPatterns\Singleton
+ * @package LoculusEvolution\DesignPatterns\Pattern\Singleton
  * @license     New BSD License
  * @copyright   Copyright (c) 2017 Tomasz Evolic Kuter. (http://www.tomaszkuter.com)
  * @author      Tomasz Kuter <tkuter@loculus.pl>

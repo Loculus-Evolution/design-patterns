@@ -13,30 +13,30 @@ Feature: Singleton design pattern
 
 
   Scenario: Detecting if we have getInstance() method for provided simple Singleton class
-    Given there is a "LoculusEvolution\DesignPatterns\Singleton\Singleton" class
+    Given there is a "LoculusEvolution\DesignPatterns\Pattern\Singleton\Singleton" class
     And the method "getInstance" exists
     And the method "getInstance" should have "public" and "static" access only
-    And the method "getInstance" should return "LoculusEvolution\DesignPatterns\Singleton\Singleton" instance
+    And the method "getInstance" should return "LoculusEvolution\DesignPatterns\Pattern\Singleton\Singleton" instance
 
   Scenario: Detecting if we have getInstance() method for class RDMM extending AbstractSingleton
     Given there is a "tests\LoculusEvolution\DesignPatterns\BDD\Behat\bootstrap\Singleton\RDMM" class
     Then the method "getInstance" exists
     And the method "getInstance" should have "public" and "static" access only
-    And the method "getInstance" should return "LoculusEvolution\DesignPatterns\Singleton\Singleton" instance
+    And the method "getInstance" should return "LoculusEvolution\DesignPatterns\Pattern\Singleton\Singleton" instance
 
   Scenario: Detecting if we have getInstance() method for class ODMM using SingletonTrait
     Given there is a "tests\LoculusEvolution\DesignPatterns\BDD\Behat\bootstrap\Singleton\ODMM" class
     And the method "getInstance" exists
     And the method "getInstance" should have "public" and "static" access only
-    And class uses "LoculusEvolution\DesignPatterns\Singleton\SingletonTrait" trait
+    And class uses "LoculusEvolution\DesignPatterns\Pattern\Singleton\SingletonTrait" trait
     And the method "getInstance" should return "tests\LoculusEvolution\DesignPatterns\BDD\Behat\bootstrap\Singleton\ODMM" instance
 
   Scenario: Detecting if we have getInstance() method for class MQPM using SingletonTrait
     Given there is a "tests\LoculusEvolution\DesignPatterns\BDD\Behat\bootstrap\Singleton\MQPM" class
     And the method "getInstance" exists
     And the method "getInstance" should have "public" and "static" access only
-    And class uses "LoculusEvolution\DesignPatterns\Singleton\SingletonTrait" trait
-    And the method "getInstance" should return "LoculusEvolution\DesignPatterns\Singleton\Singleton" instance
+    And class uses "LoculusEvolution\DesignPatterns\Pattern\Singleton\SingletonTrait" trait
+    And the method "getInstance" should return "LoculusEvolution\DesignPatterns\Pattern\Singleton\Singleton" instance
 
   Scenario: Detecting if we can create an instance by calling new operator
     Given there is a "tests\LoculusEvolution\DesignPatterns\BDD\Behat\bootstrap\Singleton\RDMM" class
