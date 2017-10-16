@@ -1,0 +1,16 @@
+default:
+  suites:
+    # running basic Singleton suite
+    singleton:
+      paths:
+        - tests/LoculusEvolution/DesignPatterns/BDD/Behat/features/Singleton
+      contexts:
+        - SingletonFeatureContext
+
+    # running ODMM Singleton suite
+    singleton-ODMM:
+      paths:
+        - tests/LoculusEvolution/DesignPatterns/BDD/Behat/features/Singleton.ODMM
+      contexts:
+        - SingletonODMMFeatureContext:
+          className: tests\LoculusEvolution\DesignPatterns\BDD\Behat\bootstrap\Singleton\ODMM

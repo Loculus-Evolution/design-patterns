@@ -1,16 +1,17 @@
 <?php
-namespace LoculusEvolution\DesignPatterns\Singleton;
+namespace tests\LoculusEvolution\DesignPatterns\BDD\Behat\bootstrap\Singleton;
 
+use LoculusEvolution\DesignPatterns\Singleton;
 use LoculusEvolution\DesignPatterns\Exception\ClassNotFoundException;
 
 /**
- * Simple instance factory final class implementing Singleton design pattern by extending abstract class.
+ * RDMM class implementing Singleton design pattern by extending abstract class.
  *
  * @licence MIT
  * @author Tomasz Kuter <tkuter@loculus.pl>
- * @createdAt 2017-10-03 00L39S59 Europe/Poland.LesserPoland/Cracow
+ * @createdAt 2017-10-16T08M12S59, Europe/Krakow
  */
-final class Singleton extends AbstractSingleton
+final class RDMM extends Singleton\AbstractSingleton
 {
     /**
      * Singleton constructor.
@@ -37,14 +38,11 @@ final class Singleton extends AbstractSingleton
      * Returns an instance of the object based on Singleton design pattern
      *
      * @param  string  $className  Class name
-     * @return SingletonInterface
+     * @return Singleton\SingletonInterface
      * @throws ClassNotFoundException
      */
-    public static function getInstance(string $className = self::class): SingletonInterface
+    public static function getInstance(string $className = self::class): Singleton\SingletonInterface
     {
-//        echo __METHOD__, PHP_EOL;
-//        echo $className, PHP_EOL;
-
         if (is_null(static::$instance)) {
             if (! class_exists($className)) {
                 throw new ClassNotFoundException('', ClassNotFoundException::EXCEPTION_CODE, $className);
@@ -52,8 +50,6 @@ final class Singleton extends AbstractSingleton
 
             static::$instance = new $className();
         }
-
-//        echo 'exit getInstance().', PHP_EOL;
 
         return static::$instance;
     }

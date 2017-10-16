@@ -38,9 +38,16 @@
     "autoload-dev": {
         "psr-4": {
             "tests\\LoculusEvolution\\": "tests/LoculusEvolution",
-            "tests\\LoculusEvolution\\Design-Patterns\\": "src/LoculusEvolution/Design-Patterns",
-            "tests\\LoculusEvolution\\Design-Patterns\\BDD\\": "src/LoculusEvolution/Design-Patterns/BDD",
-            "tests\\LoculusEvolution\\Design-Patterns\\BDD\\Behat\\": "src/LoculusEvolution/Design-Patterns/BDD/Behat"
+            "tests\\LoculusEvolution\\DesignPatterns\\": "src/LoculusEvolution/DesignPatterns",
+            "tests\\LoculusEvolution\\DesignPatterns\\BDD\\": "src/LoculusEvolution/DesignPatterns/BDD",
+            "tests\\LoculusEvolution\\DesignPatterns\\BDD\\Behat\\": "src/LoculusEvolution/DesignPatterns/BDD/Behat",
+
+            "tests\\LoculusEvolution\\DesignPatterns\\BDD\\Behat\\bootstrap\\": "tests/LoculusEvolution/DesignPatterns/BDD/Behat/bootstrap",
+            "tests\\LoculusEvolution\\DesignPatterns\\BDD\\Behat\\bootstrap\\Context\\": "tests/LoculusEvolution/DesignPatterns/BDD/Behat/bootstrap/Context",
+            "tests\\LoculusEvolution\\DesignPatterns\\BDD\\Behat\\bootstrap\\Context\\Singleton\\": "tests/LoculusEvolution/DesignPatterns/BDD/Behat/bootstrap/Context/Singleton",
+            "tests\\LoculusEvolution\\DesignPatterns\\BDD\\Behat\\bootstrap\\Context\\SingletonODMM\\": "tests/LoculusEvolution/DesignPatterns/BDD/Behat/bootstrap/Context/SingletonODMM",
+            "tests\\LoculusEvolution\\DesignPatterns\\BDD\\Behat\\bootstrap\\Context\\Traits\\": "tests/LoculusEvolution/DesignPatterns/BDD/Behat/bootstrap/Context/Traits"
+
         }
     }
 }

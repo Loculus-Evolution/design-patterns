@@ -1,19 +1,25 @@
 <?php
-namespace LoculusEvolution\DesignPatterns\Singleton;
+namespace LoculusEvolution\DesignPatterns\Demo\Singleton;
+
+use LoculusEvolution\DesignPatterns\Singleton\SingletonInterface;
+use LoculusEvolution\DesignPatterns\Singleton\SingletonTrait;
 
 use LoculusEvolution\DesignPatterns\Exception\ClassNotFoundException;
 
 /**
- * Simple instance factory final class implementing Singleton design pattern by extending abstract class.
+ * Simple instance factory final class implementing Singleton design pattern by using trait.
  *
  * @licence MIT
  * @author Tomasz Kuter <tkuter@loculus.pl>
  * @createdAt 2017-10-03 00L39S59 Europe/Poland.LesserPoland/Cracow
  */
-final class Singleton extends AbstractSingleton
+final class InstanceFactory implements SingletonInterface
 {
+    use SingletonTrait;
+
+
     /**
-     * Singleton constructor.
+     * Singleton constructor needs to be written to use trait.
      *
      * It's private because Singleton design pattern means, than we cannot create an instance of the object
      * based on the Singleton in standard way by writing: new Singleton().
@@ -23,37 +29,21 @@ final class Singleton extends AbstractSingleton
     }
 
     /**
-     * Singleton cloning locker.
-     *
-     * It's private because singleton design pattern means, than we cannot clone an instance of the object
-     * based on the singleton in standard way by clone function.
-     */
-    private function __clone()
-    {
-    }
-
-
-    /**
      * Returns an instance of the object based on Singleton design pattern
      *
-     * @param  string  $className  Class name
+     * @param  string  $className
      * @return SingletonInterface
      * @throws ClassNotFoundException
      */
     public static function getInstance(string $className = self::class): SingletonInterface
     {
-//        echo __METHOD__, PHP_EOL;
-//        echo $className, PHP_EOL;
-
         if (is_null(static::$instance)) {
             if (! class_exists($className)) {
                 throw new ClassNotFoundException('', ClassNotFoundException::EXCEPTION_CODE, $className);
             }
 
-            static::$instance = new $className();
+            static::$instance = new self();
         }
-
-//        echo 'exit getInstance().', PHP_EOL;
 
         return static::$instance;
     }

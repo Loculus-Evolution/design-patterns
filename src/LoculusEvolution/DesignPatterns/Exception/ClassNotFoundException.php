@@ -17,6 +17,15 @@ class ClassNotFoundException extends \Exception
      */
     private $className;
 
+
+    /**
+     * ClassNotFoundException constructor.
+     *
+     * @param  string  $message
+     * @param  int  $code
+     * @param  Throwable  $className
+     * @param  Throwable|null  $previous
+     */
     public function __construct(
         $message = '',
         $code = self::EXCEPTION_CODE,

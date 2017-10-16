@@ -9,10 +9,10 @@ namespace LoculusEvolution\DesignPatterns\Singleton;
 interface SingletonInterface
 {
     /**
-     * Returns an instance of the object based on singleton design pattern
+     * Returns an instance of the object based on Singleton design pattern
      *
      * @param  string  $className  Class name
-     * @return singletonInterface
+     * @return SingletonInterface
      */
-    public static function getInstance(string $className = Singleton::class): singletonInterface;
+    public static function getInstance(string $className = AbstractSingleton::class): SingletonInterface;
 }

@@ -11,6 +11,7 @@ Agielska nazwa: Manufacture, Mother, Father, Parent, Instance Factory.
 
 Wzorzec projektowy Singleton (ang. Singleton) to..
 
+
 ## Opis przypadku użycia / zastosowania
 
 Klasycznym przykładem użycia wzorca projektowego Singleton był przez wiele lat obiekt zapewniający dostęp do bazy danych.

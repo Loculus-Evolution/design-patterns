@@ -1,9 +1,8 @@
 <?php
-//exit;
-require_once '../vendor/autoload.php';
+require_once '../../vendor/autoload.php';
 require_once 'InstanceFactory.php';
 
-use LoculusEvolution\DesignPatterns\Singleton\InstanceFactory;
+use LoculusEvolution\DesignPatterns\Demo\Singleton\InstanceFactory;
 
 echo 'test-1.', PHP_EOL;
 
@@ -20,8 +19,8 @@ echo 'test-3.', PHP_EOL;
 //$object3 = clone $objectOne;
 
 var_dump($objectOne);
-var_dump($object2);
-var_dump($object3);
+//var_dump($object2);
+//var_dump($object3);
 
 echo 'done.', PHP_EOL;
 exit(1);
