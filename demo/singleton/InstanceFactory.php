@@ -9,9 +9,10 @@ use LoculusEvolution\DesignPatterns\Exception\ClassNotFoundException;
 /**
  * Simple instance factory final class implementing Singleton design pattern by using trait.
  *
- * @licence MIT
- * @author Tomasz Kuter <tkuter@loculus.pl>
- * @createdAt 2017-10-03 00L39S59 Europe/Poland.LesserPoland/Cracow
+ * @package     LoculusEvolution\DesignPatterns\Demo\Singleton
+ * @license     New BSD License
+ * @copyright   Copyright (c) 2017 Tomasz Evolic Kuter. (http://www.tomaszkuter.com)
+ * @author      Tomasz Kuter <tkuter@loculus.pl>
  */
 final class InstanceFactory implements SingletonInterface
 {

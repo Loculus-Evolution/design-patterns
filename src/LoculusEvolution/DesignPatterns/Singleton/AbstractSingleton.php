@@ -2,9 +2,12 @@
 namespace LoculusEvolution\DesignPatterns\Singleton;
 
 /**
- * @licence MIT
- * @author Tomasz Kuter <tkuter@loculus.pl>
- * @publisedAt 2017-10-03 00L39S59 Europe/Poland.LesserPoland/Cracow
+ * Class AbstractSingleton
+ *
+ * @package LoculusEvolution\DesignPatterns\Singleton
+ * @license     New BSD License
+ * @copyright   Copyright (c) 2017 Tomasz Evolic Kuter. (http://www.tomaszkuter.com)
+ * @author      Tomasz Kuter <tkuter@loculus.pl>
  */
 abstract class AbstractSingleton implements SingletonInterface
 {

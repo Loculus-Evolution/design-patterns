@@ -6,11 +6,12 @@ use LoculusEvolution\DesignPatterns\Exception\ClassNotFoundException;
 /**
  * Simple instance factory final class implementing Singleton design pattern by extending abstract class.
  *
- * @licence MIT
- * @author Tomasz Kuter <tkuter@loculus.pl>
- * @createdAt 2017-10-03 00L39S59 Europe/Poland.LesserPoland/Cracow
+ * @package LoculusEvolution\DesignPatterns\Singleton
+ * @license     New BSD License
+ * @copyright   Copyright (c) 2017 Tomasz Evolic Kuter. (http://www.tomaszkuter.com)
+ * @author      Tomasz Kuter <tkuter@loculus.pl>
  */
-final class Singleton extends AbstractSingleton
+class Singleton extends AbstractSingleton
 {
     /**
      * Singleton constructor.
@@ -42,18 +43,17 @@ final class Singleton extends AbstractSingleton
      */
     public static function getInstance(string $className = self::class): SingletonInterface
     {
-//        echo __METHOD__, PHP_EOL;
-//        echo $className, PHP_EOL;
-
         if (is_null(static::$instance)) {
             if (! class_exists($className)) {
-                throw new ClassNotFoundException('', ClassNotFoundException::EXCEPTION_CODE, $className);
+                throw new ClassNotFoundException(
+                    '',
+                    ClassNotFoundException::EXCEPTION_CODE,
+                    $className
+                );
             }
 
             static::$instance = new $className();
         }
-
-//        echo 'exit getInstance().', PHP_EOL;
 
         return static::$instance;
     }

@@ -5,7 +5,11 @@ use Throwable;
 
 /**
  * Class ClassNotFoundException
- * @package LoculusEvolution\DesignPatterns\Exception
+ *
+ * @package     LoculusEvolution\DesignPatterns\Exception
+ * @license     New BSD License
+ * @copyright   Copyright (c) 2017 Tomasz Evolic Kuter. (http://www.tomaszkuter.com)
+ * @author      Tomasz Kuter <tkuter@loculus.pl>
  */
 class ClassNotFoundException extends \Exception
 {

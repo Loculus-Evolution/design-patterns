@@ -4,10 +4,12 @@ namespace LoculusEvolution\DesignPatterns\Singleton;
 use LoculusEvolution\DesignPatterns\Exception\ClassNotFoundException;
 
 /**
- * @licence MIT
- * @author Tomasz Kuter <tkuter@loculus.pl>
- * @createdAt 2017-10-03 00L39S59 Europe/Poland.LesserPoland/Cracow
- * @publisedAt 2017-10-03 00L39S59 Europe/Poland.LesserPoland/Cracow
+ * Trait SingletonTrait
+ *
+ * @package LoculusEvolution\DesignPatterns\Singleton
+ * @license     New BSD License
+ * @copyright   Copyright (c) 2017 Tomasz Evolic Kuter. (http://www.tomaszkuter.com)
+ * @author      Tomasz Kuter <tkuter@loculus.pl>
  */
 trait SingletonTrait
 {
@@ -49,7 +51,11 @@ trait SingletonTrait
     {
         if (is_null(static::$instance)) {
             if (! class_exists($className)) {
-                throw new ClassNotFoundException('', ClassNotFoundException::EXCEPTION_CODE, $className);
+                throw new ClassNotFoundException(
+                    '',
+                    ClassNotFoundException::EXCEPTION_CODE,
+                    $className
+                );
             }
 
             static::$instance = $className::getInstance();
