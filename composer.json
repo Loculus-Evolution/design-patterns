@@ -3,8 +3,8 @@
     "type": "library",
     "description": "Bunch of design pattern traits.",
     "keywords": ["framework", "design patterns", "traits"],
-    "homepage": "http://appcraft.academy",
-    "license": "BSD-3-Clause AGH LL class",
+    "homepage": "http://appcraft.academy/",
+    "license": "BSD-3-Clause",
     "authors": [
         {
             "name": "Tomasz Kuter",
