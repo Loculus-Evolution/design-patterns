@@ -4,8 +4,8 @@ Wprowadzenie..
 
 ### Inne nazwy wzorca
 
-Polska nazwa: Obserwator.
-Agielska nazwa: Observer.
+- Agielska nazwa: Observer.
+- Polska nazwa: Obserwator.
 
 ## Definicja / Opis wzorca
 

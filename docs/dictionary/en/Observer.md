@@ -4,8 +4,8 @@ Lead..
 
 ### Other names
 
-Polish name: Obserwator
-English name: Observer.
+- English name: Observer.
+- Polish name: Obserwator
 
 ## Definition
 

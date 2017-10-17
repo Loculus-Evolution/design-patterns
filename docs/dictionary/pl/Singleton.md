@@ -4,8 +4,8 @@ Wprowadzenie..
 
 ### Inne nazwy wzorca
 
-Polska nazwa: Manufaktura, Matka, Ojciec, Rodzic, Fabryka egzemplarzy.
-Agielska nazwa: Manufacture, Mother, Father, Parent, Instance Factory.
+- Agielska nazwa: Manufacture, Mother, Father, Parent, Instance Factory.
+- Polska nazwa: Manufaktura, Matka, Ojciec, Rodzic, Fabryka egzemplarzy.
 
 ## Definicja / Opis wzorca
 
